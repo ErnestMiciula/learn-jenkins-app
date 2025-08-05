@@ -29,6 +29,7 @@ pipeline {
                     else
                         echo "File does not exists"
                     fi
+                    npm test
                 '''
             }
         }
