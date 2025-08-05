@@ -23,6 +23,12 @@ pipeline {
             steps {
                 sh '''
                     echo  "Test stage"
+                    if [ -e index.html ]
+                    then
+                        echo "File exists"
+                    else
+                        echo "File does not exists"
+                    fi
                 '''
             }
         }
