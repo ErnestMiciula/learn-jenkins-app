@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh '''
                     echo  "Test stage"
-                    if [ -e index.html ]
+                    if [ -e build/index.html ]
                     then
                         echo "File exists"
                     else
